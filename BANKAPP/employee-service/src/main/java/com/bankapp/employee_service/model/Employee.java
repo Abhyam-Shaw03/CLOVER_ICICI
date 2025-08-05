@@ -12,8 +12,9 @@ import java.time.LocalDate;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @NotBlank(message = "Employee ID is required")
+    @Column(nullable = false, unique = true, length = 12)
+    private String employeeId;
 
     @NotBlank(message = "First name is required")
     @Column(nullable = false)
@@ -40,14 +41,9 @@ public class Employee {
     @Pattern(regexp = "\\d{10}", message = "Phone number must be exactly 10 digits")
     private String altPhoneNumber;
 
-    @Email(message = "Invalid email format")
-    @NotBlank(message = "Email is required")
     @Column(nullable = false, unique = true)
+    @Pattern(regexp = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$", message = "Invalid email pattern")
     private String email;
-
-    @NotBlank(message = "Employee ID is required")
-    @Column(nullable = false, unique = true)
-    private String employeeId;
 
     @Column(nullable = false)
     private String password;
@@ -95,8 +91,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(Long id, String firstName, String middleName, String lastName, String gender, LocalDate dateOfBirth, String phoneNumber, String altPhoneNumber, String email, String employeeId, String password, String role, String branchId, String department, LocalDate joinDate, double salary, String aadharNumber, String panNumber, String address, String city, String state, String zipCode, boolean isActive) {
-        this.id = id;
+    public Employee(String firstName, String middleName, String lastName, String gender, LocalDate dateOfBirth, String phoneNumber, String altPhoneNumber, String email, String employeeId, String password, String role, String branchId, String department, LocalDate joinDate, double salary, String aadharNumber, String panNumber, String address, String city, String state, String zipCode, boolean isActive) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -119,14 +114,6 @@ public class Employee {
         this.state = state;
         this.zipCode = zipCode;
         this.isActive = isActive;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getFirstName() {
@@ -308,7 +295,7 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "id=" + id +
+                " employeeId='" + employeeId + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", middleName='" + middleName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -317,7 +304,6 @@ public class Employee {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", altPhoneNumber='" + altPhoneNumber + '\'' +
                 ", email='" + email + '\'' +
-                ", employeeId='" + employeeId + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
                 ", branchId='" + branchId + '\'' +

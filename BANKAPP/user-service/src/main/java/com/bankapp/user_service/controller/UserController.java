@@ -1,6 +1,6 @@
 package com.bankapp.user_service.controller;
 
-import com.bankapp.user_service.dto.UserLoginDTO;
+//import com.bankapp.user_service.dto.UserLoginDTO;
 import com.bankapp.user_service.dto.UserRegisterDTO;
 import com.bankapp.user_service.service.UserService;
 import jakarta.validation.Valid;
@@ -12,22 +12,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-    @PostMapping("/register/user")
-    public ResponseEntity<String> registerUser(@Valid @RequestBody UserRegisterDTO dto) {
+    @PostMapping("/register")
+    public ResponseEntity<String> createUser(@Valid @RequestBody UserRegisterDTO dto) {
         userService.createUser(dto);
         return ResponseEntity.ok("User created successfully");
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<String> loginUser(@Valid @RequestBody UserLoginDTO userLoginDTO){
-        String token = userService.verifyUser(userLoginDTO);
-        return ResponseEntity.ok(token);
-    }
+//    @PostMapping("/login")
+//    public ResponseEntity<String> loginUser(@Valid @RequestBody UserLoginDTO userLoginDTO){
+//        String token = userService.verifyUser(userLoginDTO);
+//        return ResponseEntity.ok(token);
+//    }
 
 }

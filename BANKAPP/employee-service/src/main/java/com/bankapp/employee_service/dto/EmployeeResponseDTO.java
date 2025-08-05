@@ -8,7 +8,7 @@ import java.time.LocalDate;
 @Builder
 public class EmployeeResponseDTO {
 
-    private Long id;
+    private String employeeId;
 
     private String firstName;
     private String middleName;
@@ -20,7 +20,7 @@ public class EmployeeResponseDTO {
     private String altPhoneNumber;
 
     private String email;
-    private String employeeId;
+
     private String role;
     private String branchId;
     private String department;
@@ -41,8 +41,7 @@ public class EmployeeResponseDTO {
     public EmployeeResponseDTO() {
     }
 
-    public EmployeeResponseDTO(Long id, String firstName, String middleName, String lastName, String gender, LocalDate dateOfBirth, String phoneNumber, String altPhoneNumber, String email, String employeeId, String role, String branchId, String department, LocalDate joinDate, double salary, String aadharNumber, String panNumber, String address, String city, String state, String zipCode, boolean isActive) {
-        this.id = id;
+    public EmployeeResponseDTO(String firstName, String middleName, String lastName, String gender, LocalDate dateOfBirth, String phoneNumber, String altPhoneNumber, String email, String employeeId, String role, String branchId, String department, LocalDate joinDate, double salary, String aadharNumber, String panNumber, String address, String city, String state, String zipCode, boolean isActive) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -64,14 +63,6 @@ public class EmployeeResponseDTO {
         this.state = state;
         this.zipCode = zipCode;
         this.isActive = isActive;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getFirstName() {
@@ -245,7 +236,7 @@ public class EmployeeResponseDTO {
     @Override
     public String toString() {
         return "EmployeeResponseDTO{" +
-                "id=" + id +
+                " employeeId='" + employeeId + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", middleName='" + middleName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -254,7 +245,7 @@ public class EmployeeResponseDTO {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", altPhoneNumber='" + altPhoneNumber + '\'' +
                 ", email='" + email + '\'' +
-                ", employeeId='" + employeeId + '\'' +
+
                 ", role='" + role + '\'' +
                 ", branchId='" + branchId + '\'' +
                 ", department='" + department + '\'' +

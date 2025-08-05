@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient(name = "user-service", url = "http://localhost:8083") // later remove URL for Eureka
 public interface UserServiceClient {
 
-    @PostMapping("/users/register/user")
-    void registerUser(@RequestBody UserRegisterDTO userDto);
+    @PostMapping("/user/register")
+    void createUser(@RequestBody UserRegisterDTO userDto);
 }

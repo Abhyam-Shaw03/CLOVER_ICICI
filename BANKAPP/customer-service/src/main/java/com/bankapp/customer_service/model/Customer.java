@@ -12,8 +12,9 @@ import java.time.LocalDate;
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @NotBlank(message = "Customer ID is required")
+    @Column(nullable = false, unique = true, length = 12)
+    private String customerId;
 
     @NotBlank(message = "First name is required")
     @Column(nullable = false)
@@ -39,9 +40,6 @@ public class Customer {
 
     @Pattern(regexp = "\\d{10}", message = "Phone number must be exactly 10 digits")
     private String altPhoneNumber;
-
-    @Column(nullable = false, unique = true, length = 12)
-    private String customerId;
 
     @Column(nullable = false)
     private String password;
@@ -91,8 +89,7 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(Long id, String firstName, String middleName, String lastName, String gender, LocalDate dateOfBirth, String phoneNumber, String altPhoneNumber, String customerId, String password, String emailId, String aadharNumber, String panNumber, String address, String city, String state, String zipCode, String occupation, double annualIncome, String accountType, String branchId, LocalDate registrationDate, boolean isActive) {
-        this.id = id;
+    public Customer(String firstName, String middleName, String lastName, String gender, LocalDate dateOfBirth, String phoneNumber, String altPhoneNumber, String customerId, String password, String emailId, String aadharNumber, String panNumber, String address, String city, String state, String zipCode, String occupation, double annualIncome, String accountType, String branchId, LocalDate registrationDate, boolean isActive) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -115,14 +112,6 @@ public class Customer {
         this.branchId = branchId;
         this.registrationDate = registrationDate;
         this.isActive = isActive;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getFirstName() {
@@ -304,7 +293,7 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                "id=" + id +
+                " customerId='" + customerId + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", middleName='" + middleName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -312,7 +301,7 @@ public class Customer {
                 ", dateOfBirth=" + dateOfBirth +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", altPhoneNumber='" + altPhoneNumber + '\'' +
-                ", customerId='" + customerId + '\'' +
+
                 ", password='" + password + '\'' +
                 ", emailId='" + emailId + '\'' +
                 ", aadharNumber='" + aadharNumber + '\'' +

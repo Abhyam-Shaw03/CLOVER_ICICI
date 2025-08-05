@@ -48,12 +48,13 @@ public class EmployeeService {
         userDto.setPassword(employee.getPassword());
         userDto.setRole("EMPLOYEE");
 
-        userServiceClient.registerUser(userDto); // sends data to user-service
+        userServiceClient.createUser(userDto); // sends data to user-service
 
         return employeeMapper.toResponseDTO(saved);
 
     }
 
+    // GENERATING OF EMPLOYEE ID
     private String generateEmployeeId(Employee employee) {
         String firstTwoFirstName = employee.getFirstName().substring(0, 2).toUpperCase();
         String firstTwoLastName = employee.getLastName().substring(0, 2).toUpperCase();

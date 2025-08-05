@@ -7,7 +7,7 @@ import java.time.LocalDate;
 @Data
 public class CustomerResponseDTO {
 
-    private Long id;
+    private String customerId;
 
     private String firstName;
 
@@ -16,8 +16,6 @@ public class CustomerResponseDTO {
     private String lastName;
 
     private String gender;
-
-    private String customerId;
 
     private LocalDate dateOfBirth;
 
@@ -54,8 +52,8 @@ public class CustomerResponseDTO {
     public CustomerResponseDTO() {
     }
 
-    public CustomerResponseDTO(Long id, String firstName, String middleName, String lastName, String gender, String customerId, LocalDate dateOfBirth, String phoneNumber, String altPhoneNumber, String emailId, String aadharNumber, String panNumber, String address, String city, String state, String zipCode, String occupation, double annualIncome, String accountType, String branchId, LocalDate registrationDate, boolean isActive) {
-        this.id = id;
+    public CustomerResponseDTO(String firstName, String middleName, String lastName, String gender, String customerId, LocalDate dateOfBirth, String phoneNumber, String altPhoneNumber, String emailId, String aadharNumber, String panNumber, String address, String city, String state, String zipCode, String occupation, double annualIncome, String accountType, String branchId, LocalDate registrationDate, boolean isActive) {
+
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -77,14 +75,6 @@ public class CustomerResponseDTO {
         this.branchId = branchId;
         this.registrationDate = registrationDate;
         this.isActive = isActive;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getFirstName() {
@@ -258,7 +248,7 @@ public class CustomerResponseDTO {
     @Override
     public String toString() {
         return "CustomerResponseDTO{" +
-                "id=" + id +
+                " customerId='" + customerId + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", middleName='" + middleName + '\'' +
                 ", lastName='" + lastName + '\'' +

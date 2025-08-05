@@ -1,0 +1,52 @@
+2025-08-02T12:21:40.098+05:30  INFO 2840 --- [service-registry] [restartedMain] c.b.s.ServiceRegistryApplication         : Starting ServiceRegistryApplication using Java 21.0.3 with PID 2840 (D:\CLOVER_ICICI\BANKAPP\service-registry\target\classes started by abhya in D:\CLOVER_ICICI\BANKAPP)
+2025-08-02T12:21:40.100+05:30  INFO 2840 --- [service-registry] [restartedMain] c.b.s.ServiceRegistryApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T12:21:40.162+05:30  INFO 2840 --- [service-registry] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-02T12:21:40.162+05:30  INFO 2840 --- [service-registry] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-02T12:21:41.182+05:30  INFO 2840 --- [service-registry] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a1013292-cda7-3c50-a9cb-47eac960e0da
+2025-08-02T12:21:41.568+05:30  INFO 2840 --- [service-registry] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2025-08-02T12:21:41.580+05:30  INFO 2840 --- [service-registry] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T12:21:41.580+05:30  INFO 2840 --- [service-registry] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02T12:21:41.623+05:30  INFO 2840 --- [service-registry] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T12:21:41.624+05:30  INFO 2840 --- [service-registry] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1458 ms
+2025-08-02T12:21:42.527+05:30  INFO 2840 --- [service-registry] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-08-02T12:21:42.528+05:30  INFO 2840 --- [service-registry] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-08-02T12:21:42.733+05:30  INFO 2840 --- [service-registry] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-08-02T12:21:42.733+05:30  INFO 2840 --- [service-registry] [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-08-02T12:21:42.888+05:30  INFO 2840 --- [service-registry] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-02T12:21:43.702+05:30  INFO 2840 --- [service-registry] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-02T12:21:43.762+05:30  WARN 2840 --- [service-registry] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-02T12:21:43.779+05:30  INFO 2840 --- [service-registry] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-02T12:21:43.795+05:30  INFO 2840 --- [service-registry] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-02T12:21:43.795+05:30  INFO 2840 --- [service-registry] [restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-08-02T12:21:43.796+05:30  INFO 2840 --- [service-registry] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754117503796 with initial instances count: 0
+2025-08-02T12:21:43.826+05:30  INFO 2840 --- [service-registry] [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-08-02T12:21:43.828+05:30  WARN 2840 --- [service-registry] [restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-08-02T12:21:43.836+05:30  INFO 2840 --- [service-registry] [restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-08-02T12:21:43.836+05:30  INFO 2840 --- [service-registry] [restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-08-02T12:21:43.848+05:30  INFO 2840 --- [service-registry] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-02T12:21:43.912+05:30  INFO 2840 --- [service-registry] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTRY with eureka with status UP
+2025-08-02T12:21:43.921+05:30  INFO 2840 --- [service-registry] [Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-08-02T12:21:43.922+05:30  INFO 2840 --- [service-registry] [Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-08-02T12:21:43.922+05:30  INFO 2840 --- [service-registry] [Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-08-02T12:21:43.922+05:30  INFO 2840 --- [service-registry] [Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-08-02T12:21:43.922+05:30  INFO 2840 --- [service-registry] [Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-08-02T12:21:43.924+05:30  INFO 2840 --- [service-registry] [Thread-15] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-08-02T12:21:43.932+05:30  INFO 2840 --- [service-registry] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2025-08-02T12:21:43.933+05:30  INFO 2840 --- [service-registry] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2025-08-02T12:21:43.952+05:30  INFO 2840 --- [service-registry] [restartedMain] c.b.s.ServiceRegistryApplication         : Started ServiceRegistryApplication in 4.339 seconds (process running for 5.086)
+2025-08-02T12:21:44.053+05:30  INFO 2840 --- [service-registry] [restartedMain] c.b.s.ServiceRegistryApplication         : Application is fully up and running!
+2025-08-02T12:21:44.055+05:30  INFO 2840 --- [service-registry] [restartedMain] c.b.s.ServiceRegistryApplication         : ServiceRegistryApplication started successfully.
+2025-08-02T12:22:04.757+05:30  INFO 2840 --- [service-registry] [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T12:22:04.757+05:30  INFO 2840 --- [service-registry] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T12:22:04.757+05:30  INFO 2840 --- [service-registry] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-02T12:22:21.439+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-REGISTRY with eureka with status DOWN
+2025-08-02T12:22:21.439+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T12:22:21.450+05:30  INFO 2840 --- [service-registry] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T12:22:21.450+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2025-08-02T12:22:21.450+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-08-02T12:22:21.450+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-08-02T12:22:21.450+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2025-08-02T12:22:21.450+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-08-02T12:22:21.450+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-08-02T12:22:21.459+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-02T12:22:21.459+05:30  INFO 2840 --- [service-registry] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

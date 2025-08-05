@@ -42,6 +42,7 @@ public class CustomerService {
         // ENCODING & SETTING PASSWORD
         customer.setPassword(passwordEncoder.encode(customer.getPassword()));
 
+        // SAVING IN CUSTOMER DB
         Customer saved = customerRepo.save(customer);
 
         // Create UserRegisterDTO and call user-service
@@ -50,20 +51,20 @@ public class CustomerService {
         userDto.setPassword(customer.getPassword());
         userDto.setRole("CUSTOMER");
 
-        userServiceClient.registerUser(userDto); // sends data to user-service
+        userServiceClient.createUser(userDto); // sends data to user-service
 
         return customerMapper.toResponseDTO(saved);
     }
 
     // UPDATE CUSTOMER
-    public CustomerResponseDTO updateCustomer(Long id, CustomerUpdateDTO updateDTO) {
-        Customer customer = customerRepo.findById(id)
-                .orElseThrow(() -> new RuntimeException("Customer not found"));
-
-        customerMapper.updateCustomerFromDTO(updateDTO, customer);
-        Customer updated = customerRepo.save(customer);
-        return customerMapper.toResponseDTO(updated);
-    }
+//    public CustomerResponseDTO updateCustomer(Long id, CustomerUpdateDTO updateDTO) {
+//        Customer customer = customerRepo.findById(id)
+//                .orElseThrow(() -> new RuntimeException("Customer not found"));
+//
+//        customerMapper.updateCustomerFromDTO(updateDTO, customer);
+//        Customer updated = customerRepo.save(customer);
+//        return customerMapper.toResponseDTO(updated);
+//    }
 
     private String generateCustomerId(Customer customer) {
         String firstTwoFirstName = customer.getFirstName().substring(0, 2).toUpperCase();

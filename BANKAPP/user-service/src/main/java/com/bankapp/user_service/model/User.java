@@ -1,6 +1,7 @@
 package com.bankapp.user_service.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 @Entity
@@ -9,6 +10,7 @@ import lombok.*;
 public class User {
 
     @Id
+    @NotBlank(message = "User ID is required")
     @Column(length = 12, nullable = false, unique = true)
     private String userId; // e.g., 'CJO29AJD1234'
 
