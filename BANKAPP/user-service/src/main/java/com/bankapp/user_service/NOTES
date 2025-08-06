@@ -1,0 +1,16 @@
+// ✅ YOU CAN USE THE BELOW LINE TO JUST DECODE YOUR SECRET KEY
+
+CODE:
+        String decoded = new String(Base64.getDecoder().decode("bXlzZWNyZXRrZXltdXN0YmVhdGxlYXN0MzIwbGVuZ3RoIQ=="));
+        System.out.println(decoded);
+
+// ✅ HOW CAN I ENCODE A STRING INTO A SECRET KEY:
+
+If you want to make your own custom secret key:
+    1. Make sure it’s a string of at least 32 characters (for 256-bit strength).
+    2. Then encode it in Base64.
+
+CODE:
+        String secret = "your_own_custom_secret_key_32+";
+        String base64 = Base64.getEncoder().encodeToString(secret.getBytes());
+        System.out.println(base64);
