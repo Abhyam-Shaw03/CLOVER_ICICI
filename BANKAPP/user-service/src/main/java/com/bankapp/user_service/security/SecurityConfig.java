@@ -14,7 +14,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -22,11 +22,16 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 public class SecurityConfig {
 
-    @Autowired
-    private JWTFilter jwtFilter;
+//    @Autowired
+    private final JWTFilter jwtFilter;
 
-    @Autowired
-    private UserDetailsService userDetailsService;
+//    @Autowired
+    private final UserDetailsService userDetailsService;
+
+    public SecurityConfig(JWTFilter jwtFilter, UserDetailsService userDetailsService) {
+        this.jwtFilter = jwtFilter;
+        this.userDetailsService = userDetailsService;
+    }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -35,7 +40,7 @@ public class SecurityConfig {
                 .httpBasic(Customizer.withDefaults())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/user/login").permitAll()
-                                .requestMatchers("/user/register").hasAnyRole("EMPLOYEE", "CUSTOMER")
+                                .requestMatchers("/user/register").hasAnyRole("EMPLOYEE", "CUSTOMER", "ADMIN")
 //                        .requestMatchers("/users/register")
                         .anyRequest().authenticated()
                 )

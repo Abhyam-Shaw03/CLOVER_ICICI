@@ -1,6 +1,6 @@
 package com.bankapp.user_service.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,8 +10,8 @@ import java.util.List;
 
 public class UserPrincipal implements UserDetails {
 
-    @Autowired
-    private User user;
+//    @Autowired
+    private final User user;
 
     public UserPrincipal(User user){
         this.user = user;
