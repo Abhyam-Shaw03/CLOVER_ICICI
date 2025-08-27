@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "user-service", url = "http://localhost:8083") // later remove URL for Eureka
+@FeignClient(name = "user-service") // later remove URL for Eureka
 public interface UserServiceClient {
 
     @PostMapping("/user/register")
