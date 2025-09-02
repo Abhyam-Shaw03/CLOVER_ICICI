@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, String> {
+
+    // Derived query method to find an employee by their employeeId
+    Employee findByEmployeeId(String employeeId);
 }

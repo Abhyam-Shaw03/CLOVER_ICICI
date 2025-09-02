@@ -24,12 +24,6 @@ public class JWTAndLoggingFilter extends OncePerRequestFilter {
 
     private static final Logger logger = LoggerFactory.getLogger(JWTAndLoggingFilter.class);
 
-//    @Autowired
-//    private JWTService jwtService;
-//
-//    public JWTAndLoggingFilter() {
-//    }
-
     private final JWTService jwtService;
 
     // Use constructor injection

@@ -1,11 +1,8 @@
 package com.bankapp.employee_service.dto;
 
-import lombok.Builder;
-
 import java.time.LocalDate;
 
 
-@Builder
 public class EmployeeResponseDTO {
 
     private String employeeId;

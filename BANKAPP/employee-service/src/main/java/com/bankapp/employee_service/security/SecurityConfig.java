@@ -1,9 +1,11 @@
 package com.bankapp.employee_service.security;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
+//import org.springframework.http.HttpMethod;
+import org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler;
+import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -14,10 +16,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
+@EnableMethodSecurity
 public class SecurityConfig {
-
-//    @Autowired
-//    private JWTAndLoggingFilter jwtAndLoggingFilter;
 
     // Use a final field for constructor injection
     private final JWTAndLoggingFilter jwtAndLoggingFilter;
@@ -33,15 +33,8 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
-                        // Only ADMIN can create or delete employees
-                        .requestMatchers(HttpMethod.POST, "/employee/signup").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/employee/delete/**").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.GET, "/employee/all").hasRole("ADMIN")
-
-                        // ADMIN and EMPLOYEE can view their profile
-                        .requestMatchers(HttpMethod.GET, "/employee/profile/**").hasAnyRole("ADMIN", "EMPLOYEE")
-
-                        // All other requests require authentication
+                        // Allow all requests to pass through this filter chain.
+                        // The actual authorization is handled at the method level by @PreAuthorize.
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(jwtAndLoggingFilter, UsernamePasswordAuthenticationFilter.class);
@@ -52,5 +45,11 @@ public class SecurityConfig {
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder(12); // Define PasswordEncoder Bean
+    }
+
+    // REQUIRED FOR METHOD LEVEL SECURITY AUTHORIZATION HANDLED DIRECTLTY ABOVE THE CONTROLLER ENDPOINT METHOD
+    @Bean
+    static MethodSecurityExpressionHandler methodSecurityExpressionHandler() {
+        return new DefaultMethodSecurityExpressionHandler();
     }
 }
