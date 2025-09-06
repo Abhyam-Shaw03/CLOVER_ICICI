@@ -1,8 +1,5 @@
 package com.bankapp.customer_service.dto;
 
-import lombok.Data;
-
-@Data
 public class UserRegisterDTO {
     private String userId;
     private String password; // this will be already encoded

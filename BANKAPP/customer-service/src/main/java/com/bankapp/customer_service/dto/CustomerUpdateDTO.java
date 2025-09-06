@@ -1,9 +1,7 @@
 package com.bankapp.customer_service.dto;
 
 import jakarta.validation.constraints.*;
-import lombok.Data;
 
-@Data
 public class CustomerUpdateDTO {
     private String address;
 
