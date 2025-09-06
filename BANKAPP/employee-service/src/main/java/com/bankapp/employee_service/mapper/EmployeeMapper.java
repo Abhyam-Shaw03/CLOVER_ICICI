@@ -11,6 +11,7 @@ import org.mapstruct.NullValuePropertyMappingStrategy;
 
 @Mapper(componentModel = "spring")
 public interface EmployeeMapper {
+
     Employee toEntity(EmployeeCreateDTO dto);
 
     EmployeeResponseDTO toResponseDTO(Employee employee);

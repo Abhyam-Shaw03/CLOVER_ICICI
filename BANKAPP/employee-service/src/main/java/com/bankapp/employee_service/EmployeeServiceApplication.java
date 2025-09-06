@@ -16,18 +16,4 @@ public class EmployeeServiceApplication {
 		SpringApplication.run(EmployeeServiceApplication.class, args);
 	}
 
-	// Optional LoadBalancer bean for Feign + OkHttp
-//	@Bean
-//	public ReactorLoadBalancer<ServiceInstance> randomLoadBalancer(
-//			ObjectProvider<ServiceInstanceListSupplier> supplierProvider) {
-//		// Replace "employee-service" with the serviceId you want to load balance
-//		return new RandomLoadBalancer(supplierProvider, "employee-service");
-//	}
-
-//	@Bean
-//	public ReactorLoadBalancer<ServiceInstance> randomUserServiceLoadBalancer(
-//			ObjectProvider<ServiceInstanceListSupplier> supplierProvider) {
-//		return new RandomLoadBalancer(supplierProvider, "user-service");
-//	}
-
 }
