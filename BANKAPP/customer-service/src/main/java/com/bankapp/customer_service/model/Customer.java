@@ -2,11 +2,9 @@ package com.bankapp.customer_service.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import lombok.Data;
 
 import java.time.LocalDate;
 
-@Data
 @Entity
 @Table(name = "customers", schema = "customer_schema")
 public class Customer {
