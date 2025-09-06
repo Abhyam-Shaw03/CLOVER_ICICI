@@ -7,6 +7,7 @@ import com.bankapp.user_service.model.User;
 import com.bankapp.user_service.model.UserPrincipal;
 import com.bankapp.user_service.repository.UserRepository;
 import com.bankapp.user_service.security.JWTService;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -25,6 +26,7 @@ public class UserService {
     @Autowired
     private JWTService jwtService;
 
+//    @Transactional
     public void createUser(UserRegisterDTO dto) {
         User user = new User();
         user.setUserId(dto.getUserId());
@@ -47,5 +49,29 @@ public class UserService {
         }else{
             throw new RuntimeException("Invalid login credentials");
         }
+    }
+
+
+    public void updateUserPassword(String userId, String newPassword) {
+        User user = userRepository.findByUserId(userId);
+        if (user == null) {
+            // Or you can throw a more specific exception like UserNotFoundException
+            throw new RuntimeException("User not found with ID: " + userId);
+        }
+        // Set the password directly, as it's already encoded.
+        user.setPassword(newPassword);
+
+        // Save the updated user to the database.
+        userRepository.save(user);
+    }
+
+//    @Transactional
+    public void deleteUser(String userId) {
+        User user = userRepository.findByUserId(userId);
+
+        if (user == null) {
+            throw new EntityNotFoundException("User not found with ID: " + userId);
+        }
+        userRepository.delete(user);
     }
 }

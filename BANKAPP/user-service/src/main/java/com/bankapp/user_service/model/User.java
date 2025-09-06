@@ -6,7 +6,6 @@ import lombok.*;
 
 @Entity
 @Table(name = "users", schema = "user_schema") // specify schema if needed
-@Builder
 public class User {
 
     @Id
