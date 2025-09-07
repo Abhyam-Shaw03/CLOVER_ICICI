@@ -1,11 +1,11 @@
 package com.bankapp.admin_service.dto;
 
 import jakarta.validation.constraints.*;
-import lombok.Data;
+
 
 import java.time.LocalDate;
 
-@Data
+
 public class AdminCreateDTO {
 
     @NotBlank(message = "First name is required")
