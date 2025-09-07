@@ -2,7 +2,6 @@ package com.bankapp.customer_service.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -33,15 +32,8 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
-                        // Only ADMIN and EMPLOYEE can create a customer account
-                        .requestMatchers(HttpMethod.POST, "/customer/signup").hasAnyRole("ADMIN", "EMPLOYEE")
-
-                        // Only ADMIN can delete customers
-                        .requestMatchers(HttpMethod.DELETE, "/customer/delete/**").hasRole("ADMIN")
-
-                        // ADMIN and CUSTOMER can view their profile
-                        .requestMatchers(HttpMethod.GET, "/customer/profile/**").hasAnyRole("ADMIN", "CUSTOMER")
-
+                        // Allow all requests to pass through this filter chain.
+                        // The actual authorization is handled at the method level by @PreAuthorize.
                         // All other requests require authentication
                         .anyRequest().authenticated()
                 )
