@@ -11,7 +11,6 @@ public interface UserServiceClient {
     @PostMapping("/user/register")
     void createUser(@RequestBody UserRegisterDTO userDto);
 
-
     @PutMapping("/user/updatePassword/{userId}")
     void updateUserPassword(@PathVariable String userId, @RequestBody NewPasswordDTO dto);
 
