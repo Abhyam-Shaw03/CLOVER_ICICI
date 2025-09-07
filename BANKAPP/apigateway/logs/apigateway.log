@@ -1,43 +1,44 @@
-2025-08-19T15:36:20.438+05:30  INFO 10912 --- [apigateway] [main] c.b.a.ApigatewayApplicationTests         : Starting ApigatewayApplicationTests using Java 21.0.3 with PID 10912 (started by abhya in D:\CLOVER_ICICI\BANKAPP\apigateway)
-2025-08-19T15:36:20.440+05:30  INFO 10912 --- [apigateway] [main] c.b.a.ApigatewayApplicationTests         : No active profile set, falling back to 1 default profile: "default"
-2025-08-19T15:36:20.644+05:30 DEBUG 10912 --- [apigateway] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4aac85fa
-2025-08-19T15:36:22.178+05:30  INFO 10912 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b795184e-0e58-34e6-b756-d43e06d8fe8c
-2025-08-19T15:36:22.791+05:30 DEBUG 10912 --- [apigateway] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2025-08-19T15:36:22.927+05:30 DEBUG 10912 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/user/**}, params: [patterns of type [Ljava.lang.String;]
-2025-08-19T15:36:22.946+05:30 DEBUG 10912 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/customer/**}, params: [patterns of type [Ljava.lang.String;]
-2025-08-19T15:36:22.946+05:30 DEBUG 10912 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/employee/**}, params: [patterns of type [Ljava.lang.String;]
-2025-08-19T15:36:22.946+05:30 DEBUG 10912 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/admin/**}, params: [patterns of type [Ljava.lang.String;]
-2025-08-19T15:36:22.949+05:30 DEBUG 10912 --- [apigateway] [main] o.s.w.s.f.support.RouterFunctionMapping  : 1 RouterFunction(s) in 'routerFunctionMapping'
-2025-08-19T15:36:22.994+05:30 DEBUG 10912 --- [apigateway] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-19T15:36:23.253+05:30  INFO 10912 --- [apigateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-08-19T15:36:23.297+05:30  WARN 10912 --- [apigateway] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-09-02T12:08:07.151+05:30  INFO 5920 --- [apigateway] [main] c.b.a.ApigatewayApplicationTests         : Starting ApigatewayApplicationTests using Java 21.0.3 with PID 5920 (started by abhya in D:\CLOVER_ICICI\BANKAPP\apigateway)
+2025-09-02T12:08:07.157+05:30  INFO 5920 --- [apigateway] [main] c.b.a.ApigatewayApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-09-02T12:08:07.444+05:30 DEBUG 5920 --- [apigateway] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1c025cb
+2025-09-02T12:08:09.228+05:30  INFO 5920 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b795184e-0e58-34e6-b756-d43e06d8fe8c
+2025-09-02T12:08:09.958+05:30 DEBUG 5920 --- [apigateway] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-09-02T12:08:10.112+05:30 DEBUG 5920 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/user/**}, params: [patterns of type [Ljava.lang.String;]
+2025-09-02T12:08:10.128+05:30 DEBUG 5920 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/customer/**}, params: [patterns of type [Ljava.lang.String;]
+2025-09-02T12:08:10.128+05:30 DEBUG 5920 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/employee/**}, params: [patterns of type [Ljava.lang.String;]
+2025-09-02T12:08:10.129+05:30 DEBUG 5920 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/admin/**}, params: [patterns of type [Ljava.lang.String;]
+2025-09-02T12:08:10.137+05:30 DEBUG 5920 --- [apigateway] [main] o.s.w.s.f.support.RouterFunctionMapping  : 1 RouterFunction(s) in 'routerFunctionMapping'
+2025-09-02T12:08:10.186+05:30 DEBUG 5920 --- [apigateway] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-02T12:08:10.477+05:30  INFO 5920 --- [apigateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-02T12:08:10.533+05:30  WARN 5920 --- [apigateway] [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 49e63410-c4ad-49ba-8a13-1b9fce4dac54
+Using generated security password: dad629a6-5245-4be8-95c6-a9adb8bc9f6a
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-08-19T15:36:23.306+05:30  INFO 10912 --- [apigateway] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-19T15:36:23.639+05:30 DEBUG 10912 --- [apigateway] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-19T15:36:23.681+05:30 DEBUG 10912 --- [apigateway] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-19T15:36:23.841+05:30  INFO 10912 --- [apigateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2025-08-19T15:36:24.038+05:30  WARN 10912 --- [apigateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-08-19T15:36:24.082+05:30  INFO 10912 --- [apigateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-08-19T15:36:24.110+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-08-19T15:36:24.115+05:30  INFO 10912 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-08-19T15:36:24.115+05:30 DEBUG 10912 --- [apigateway] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-08-19T15:36:24.115+05:30 DEBUG 10912 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Config resolved to [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
-2025-08-19T15:36:24.115+05:30 DEBUG 10912 --- [apigateway] [main] c.n.d.s.r.a.ZoneAffinityClusterResolver  : Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
-2025-08-19T15:36:24.122+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-08-19T15:36:24.122+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-08-19T15:36:24.122+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-08-19T15:36:24.122+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-08-19T15:36:24.122+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-08-19T15:36:24.122+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-08-19T15:36:24.122+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-08-19T15:36:24.125+05:30 DEBUG 10912 --- [apigateway] [main] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
-2025-08-19T15:36:24.153+05:30 DEBUG 10912 --- [apigateway] [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
-2025-08-19T15:36:24.297+05:30 DEBUG 10912 --- [apigateway] [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2025-08-19T15:36:24.350+05:30  INFO 10912 --- [apigateway] [main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-09-02T12:08:10.552+05:30  INFO 5920 --- [apigateway] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-02T12:08:10.676+05:30 DEBUG 5920 --- [apigateway] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JWTAndLoggingFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-02T12:08:10.951+05:30 DEBUG 5920 --- [apigateway] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-02T12:08:10.992+05:30 DEBUG 5920 --- [apigateway] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-02T12:08:11.141+05:30  INFO 5920 --- [apigateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-09-02T12:08:11.355+05:30  WARN 5920 --- [apigateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-02T12:08:11.430+05:30  INFO 5920 --- [apigateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-09-02T12:08:11.451+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-09-02T12:08:11.454+05:30  INFO 5920 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-09-02T12:08:11.455+05:30 DEBUG 5920 --- [apigateway] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-09-02T12:08:11.456+05:30 DEBUG 5920 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Config resolved to [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2025-09-02T12:08:11.456+05:30 DEBUG 5920 --- [apigateway] [main] c.n.d.s.r.a.ZoneAffinityClusterResolver  : Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2025-09-02T12:08:11.463+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-09-02T12:08:11.463+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-09-02T12:08:11.463+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-09-02T12:08:11.464+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-09-02T12:08:11.464+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-09-02T12:08:11.464+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-09-02T12:08:11.464+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-09-02T12:08:11.465+05:30 DEBUG 5920 --- [apigateway] [main] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+2025-09-02T12:08:11.512+05:30 DEBUG 5920 --- [apigateway] [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2025-09-02T12:08:11.661+05:30 DEBUG 5920 --- [apigateway] [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-09-02T12:08:11.706+05:30  INFO 5920 --- [apigateway] [main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -226,8 +227,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 149 more
 
-2025-08-19T15:36:24.355+05:30  WARN 10912 --- [apigateway] [main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt
-2025-08-19T15:36:24.355+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+2025-09-02T12:08:11.708+05:30  WARN 5920 --- [apigateway] [main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-09-02T12:08:11.709+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
@@ -369,23 +370,23 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-2025-08-19T15:36:24.357+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
-2025-08-19T15:36:24.357+05:30  WARN 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
-2025-08-19T15:36:24.359+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
-2025-08-19T15:36:24.359+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-08-19T15:36:24.359+05:30  INFO 10912 --- [apigateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-08-19T15:36:24.363+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755597984363 with initial instances count: 0
-2025-08-19T15:36:24.366+05:30  INFO 10912 --- [apigateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
-2025-08-19T15:36:24.368+05:30  INFO 10912 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755597984368, current=UP, previous=STARTING]
-2025-08-19T15:36:24.368+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
-2025-08-19T15:36:24.368+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
-2025-08-19T15:36:24.370+05:30  INFO 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765: registering service...
-2025-08-19T15:36:24.370+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
-2025-08-19T15:36:24.376+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/APIGATEWAY
-2025-08-19T15:36:24.380+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2025-08-19T15:36:24.382+05:30  INFO 10912 --- [apigateway] [main] c.b.a.ApigatewayApplicationTests         : Started ApigatewayApplicationTests in 4.256 seconds (process running for 5.217)
-2025-08-19T15:36:24.395+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = ABHYAM:apigateway:8765, appName = APIGATEWAY, hostName = 172.20.10.8, status = UP, ipAddr = 172.20.10.8, port = 8765, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@7dcf18fd] as "application/json"
-2025-08-19T15:36:24.427+05:30  INFO 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-09-02T12:08:11.710+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
+2025-09-02T12:08:11.710+05:30  WARN 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2025-09-02T12:08:11.711+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
+2025-09-02T12:08:11.712+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-09-02T12:08:11.713+05:30  INFO 5920 --- [apigateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-09-02T12:08:11.715+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756795091715 with initial instances count: 0
+2025-09-02T12:08:11.718+05:30  INFO 5920 --- [apigateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
+2025-09-02T12:08:11.718+05:30  INFO 5920 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756795091718, current=UP, previous=STARTING]
+2025-09-02T12:08:11.719+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
+2025-09-02T12:08:11.719+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+2025-09-02T12:08:11.720+05:30  INFO 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765: registering service...
+2025-09-02T12:08:11.722+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+2025-09-02T12:08:11.728+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/APIGATEWAY
+2025-09-02T12:08:11.731+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-09-02T12:08:11.738+05:30  INFO 5920 --- [apigateway] [main] c.b.a.ApigatewayApplicationTests         : Started ApigatewayApplicationTests in 4.952 seconds (process running for 6.147)
+2025-09-02T12:08:11.758+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = ABHYAM:apigateway:8765, appName = APIGATEWAY, hostName = 172.20.10.8, status = UP, ipAddr = 172.20.10.8, port = 8765, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@7eb45052] as "application/json"
+2025-09-02T12:08:11.807+05:30  INFO 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -447,8 +448,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 22 more
 
-2025-08-19T15:36:24.427+05:30  WARN 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt
-2025-08-19T15:36:24.427+05:30  WARN 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - registration failed Cannot execute request on any known server
+2025-09-02T12:08:11.808+05:30  WARN 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-09-02T12:08:11.809+05:30  WARN 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - registration failed Cannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
@@ -466,7 +467,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2025-08-19T15:36:24.437+05:30  WARN 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2025-09-02T12:08:11.820+05:30  WARN 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
@@ -484,19 +485,19 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2025-08-19T15:36:24.478+05:30  INFO 10912 --- [apigateway] [main] c.b.apigateway.ApigatewayApplication     : Application is fully up and running!
-2025-08-19T15:36:25.123+05:30 DEBUG 10912 --- [apigateway] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4aac85fa, started on Tue Aug 19 15:36:20 IST 2025
-2025-08-19T15:36:25.123+05:30  INFO 10912 --- [apigateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application APIGATEWAY with eureka with status DOWN
-2025-08-19T15:36:25.123+05:30  INFO 10912 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755597985123, current=DOWN, previous=UP]
-2025-08-19T15:36:25.123+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
-2025-08-19T15:36:25.123+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
-2025-08-19T15:36:25.123+05:30  INFO 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765: registering service...
-2025-08-19T15:36:25.123+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
-2025-08-19T15:36:25.129+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/APIGATEWAY
-2025-08-19T15:36:25.129+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2025-08-19T15:36:25.132+05:30  INFO 10912 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-08-19T15:36:25.132+05:30 DEBUG 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = ABHYAM:apigateway:8765, appName = APIGATEWAY, hostName = 172.20.10.8, status = DOWN, ipAddr = 172.20.10.8, port = 8765, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@7dcf18fd] as "application/json"
-2025-08-19T15:36:25.135+05:30  INFO 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-09-02T12:08:11.834+05:30  INFO 5920 --- [apigateway] [main] c.b.apigateway.ApigatewayApplication     : Application is fully up and running!
+2025-09-02T12:08:12.576+05:30 DEBUG 5920 --- [apigateway] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1c025cb, started on Tue Sep 02 12:08:07 IST 2025
+2025-09-02T12:08:12.577+05:30  INFO 5920 --- [apigateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application APIGATEWAY with eureka with status DOWN
+2025-09-02T12:08:12.577+05:30  INFO 5920 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756795092577, current=DOWN, previous=UP]
+2025-09-02T12:08:12.577+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
+2025-09-02T12:08:12.578+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+2025-09-02T12:08:12.578+05:30  INFO 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765: registering service...
+2025-09-02T12:08:12.578+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2025-09-02T12:08:12.584+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/APIGATEWAY
+2025-09-02T12:08:12.586+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-09-02T12:08:12.589+05:30  INFO 5920 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-09-02T12:08:12.590+05:30 DEBUG 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = ABHYAM:apigateway:8765, appName = APIGATEWAY, hostName = 172.20.10.8, status = DOWN, ipAddr = 172.20.10.8, port = 8765, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@7eb45052] as "application/json"
+2025-09-02T12:08:12.619+05:30  INFO 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -558,8 +559,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 22 more
 
-2025-08-19T15:36:25.137+05:30  WARN 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt
-2025-08-19T15:36:25.137+05:30  WARN 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - registration failed Cannot execute request on any known server
+2025-09-02T12:08:12.620+05:30  WARN 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/APIGATEWAY": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-09-02T12:08:12.620+05:30  WARN 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - registration failed Cannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
@@ -577,7 +578,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2025-08-19T15:36:25.137+05:30  WARN 10912 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+2025-09-02T12:08:12.620+05:30  WARN 5920 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
@@ -595,11 +596,11 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2025-08-19T15:36:25.138+05:30  INFO 10912 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2025-08-19T15:36:25.139+05:30 DEBUG 10912 --- [apigateway] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
-2025-08-19T15:36:25.144+05:30 DEBUG 10912 --- [apigateway] [SpringApplicationShutdownHook] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8761/eureka/apps/APIGATEWAY/ABHYAM:apigateway:8765
-2025-08-19T15:36:25.144+05:30 DEBUG 10912 --- [apigateway] [SpringApplicationShutdownHook] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2025-08-19T15:36:25.148+05:30  INFO 10912 --- [apigateway] [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/APIGATEWAY/ABHYAM:apigateway:8765": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/APIGATEWAY/ABHYAM:apigateway:8765": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-09-02T12:08:12.621+05:30  INFO 5920 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-09-02T12:08:12.621+05:30 DEBUG 5920 --- [apigateway] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Clearing quarantined list of size 1
+2025-09-02T12:08:12.626+05:30 DEBUG 5920 --- [apigateway] [SpringApplicationShutdownHook] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8761/eureka/apps/APIGATEWAY/ABHYAM:apigateway:8765
+2025-09-02T12:08:12.626+05:30 DEBUG 5920 --- [apigateway] [SpringApplicationShutdownHook] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-09-02T12:08:12.628+05:30  INFO 5920 --- [apigateway] [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/APIGATEWAY/ABHYAM:apigateway:8765": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/APIGATEWAY/ABHYAM:apigateway:8765": Connect to http://localhost:8761 failed: Connection refused: getsockopt
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -676,8 +677,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 37 more
 
-2025-08-19T15:36:25.149+05:30  WARN 10912 --- [apigateway] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/APIGATEWAY/ABHYAM:apigateway:8765": Connect to http://localhost:8761 failed: Connection refused: getsockopt
-2025-08-19T15:36:25.149+05:30 ERROR 10912 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - de-registration failedCannot execute request on any known server
+2025-09-02T12:08:12.629+05:30  WARN 5920 --- [apigateway] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/APIGATEWAY/ABHYAM:apigateway:8765": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-09-02T12:08:12.629+05:30 ERROR 5920 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - de-registration failedCannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
@@ -710,84 +711,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.5.4.jar:3.5.4]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2025-08-19T15:36:25.149+05:30  INFO 10912 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2025-08-19T15:40:49.850+05:30  INFO 8388 --- [apigateway] [main] c.b.a.ApigatewayApplicationTests         : Starting ApigatewayApplicationTests using Java 21.0.3 with PID 8388 (started by abhya in D:\CLOVER_ICICI\BANKAPP\apigateway)
-2025-08-19T15:40:49.852+05:30  INFO 8388 --- [apigateway] [main] c.b.a.ApigatewayApplicationTests         : No active profile set, falling back to 1 default profile: "default"
-2025-08-19T15:40:50.048+05:30 DEBUG 8388 --- [apigateway] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@37c5fc56
-2025-08-19T15:40:51.479+05:30  INFO 8388 --- [apigateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b795184e-0e58-34e6-b756-d43e06d8fe8c
-2025-08-19T15:40:52.081+05:30 DEBUG 8388 --- [apigateway] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2025-08-19T15:40:52.207+05:30 DEBUG 8388 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/user/**}, params: [patterns of type [Ljava.lang.String;]
-2025-08-19T15:40:52.224+05:30 DEBUG 8388 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/customer/**}, params: [patterns of type [Ljava.lang.String;]
-2025-08-19T15:40:52.224+05:30 DEBUG 8388 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/employee/**}, params: [patterns of type [Ljava.lang.String;]
-2025-08-19T15:40:52.226+05:30 DEBUG 8388 --- [apigateway] [main] .s.c.g.s.m.c.RouterFunctionHolderFactory : Yaml Properties matched Operations name: path, args: {patterns=/admin/**}, params: [patterns of type [Ljava.lang.String;]
-2025-08-19T15:40:52.234+05:30 DEBUG 8388 --- [apigateway] [main] o.s.w.s.f.support.RouterFunctionMapping  : 1 RouterFunction(s) in 'routerFunctionMapping'
-2025-08-19T15:40:52.283+05:30 DEBUG 8388 --- [apigateway] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-19T15:40:52.530+05:30  INFO 8388 --- [apigateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-08-19T15:40:52.571+05:30  WARN 8388 --- [apigateway] [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 69ee4930-d315-4cdc-a2aa-d8ff0b2c8847
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-08-19T15:40:52.586+05:30  INFO 8388 --- [apigateway] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-19T15:40:52.916+05:30 DEBUG 8388 --- [apigateway] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-19T15:40:52.955+05:30 DEBUG 8388 --- [apigateway] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-19T15:40:53.094+05:30  INFO 8388 --- [apigateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2025-08-19T15:40:53.306+05:30  WARN 8388 --- [apigateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-08-19T15:40:53.359+05:30  INFO 8388 --- [apigateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2025-08-19T15:40:53.380+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2025-08-19T15:40:53.386+05:30  INFO 8388 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2025-08-19T15:40:53.386+05:30 DEBUG 8388 --- [apigateway] [main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
-2025-08-19T15:40:53.386+05:30 DEBUG 8388 --- [apigateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Config resolved to [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
-2025-08-19T15:40:53.386+05:30 DEBUG 8388 --- [apigateway] [main] c.n.d.s.r.a.ZoneAffinityClusterResolver  : Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
-2025-08-19T15:40:53.393+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2025-08-19T15:40:53.393+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2025-08-19T15:40:53.393+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2025-08-19T15:40:53.393+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2025-08-19T15:40:53.393+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2025-08-19T15:40:53.393+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2025-08-19T15:40:53.393+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2025-08-19T15:40:53.393+05:30 DEBUG 8388 --- [apigateway] [main] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
-2025-08-19T15:40:53.425+05:30 DEBUG 8388 --- [apigateway] [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
-2025-08-19T15:40:53.562+05:30 DEBUG 8388 --- [apigateway] [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2025-08-19T15:40:53.600+05:30 DEBUG 8388 --- [apigateway] [main] o.s.web.client.RestTemplate              : Response 200 OK
-2025-08-19T15:40:53.600+05:30 DEBUG 8388 --- [apigateway] [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
-2025-08-19T15:40:53.649+05:30 DEBUG 8388 --- [apigateway] [main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
-2025-08-19T15:40:53.649+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2025-08-19T15:40:53.649+05:30 DEBUG 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Got full registry with apps hashcode UP_2_
-2025-08-19T15:40:53.649+05:30 DEBUG 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : The total number of all instances in the client now is 2
-2025-08-19T15:40:53.654+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2025-08-19T15:40:53.656+05:30  INFO 8388 --- [apigateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-08-19T15:40:53.657+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755598253656 with initial instances count: 2
-2025-08-19T15:40:53.659+05:30  INFO 8388 --- [apigateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
-2025-08-19T15:40:53.659+05:30  INFO 8388 --- [apigateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755598253659, current=UP, previous=STARTING]
-2025-08-19T15:40:53.661+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
-2025-08-19T15:40:53.661+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
-2025-08-19T15:40:53.662+05:30  INFO 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765: registering service...
-2025-08-19T15:40:53.662+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
-2025-08-19T15:40:53.669+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/APIGATEWAY
-2025-08-19T15:40:53.670+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2025-08-19T15:40:53.673+05:30  INFO 8388 --- [apigateway] [main] c.b.a.ApigatewayApplicationTests         : Started ApigatewayApplicationTests in 4.138 seconds (process running for 5.125)
-2025-08-19T15:40:53.687+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = ABHYAM:apigateway:8765, appName = APIGATEWAY, hostName = 172.20.10.8, status = UP, ipAddr = 172.20.10.8, port = 8765, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@1163cff1] as "application/json"
-2025-08-19T15:40:53.713+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
-2025-08-19T15:40:53.713+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
-2025-08-19T15:40:53.713+05:30  INFO 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - registration status: 204
-2025-08-19T15:40:53.749+05:30  INFO 8388 --- [apigateway] [main] c.b.apigateway.ApigatewayApplication     : Application is fully up and running!
-2025-08-19T15:40:54.394+05:30 DEBUG 8388 --- [apigateway] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@37c5fc56, started on Tue Aug 19 15:40:50 IST 2025
-2025-08-19T15:40:54.396+05:30  INFO 8388 --- [apigateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application APIGATEWAY with eureka with status DOWN
-2025-08-19T15:40:54.396+05:30  INFO 8388 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755598254396, current=DOWN, previous=UP]
-2025-08-19T15:40:54.396+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
-2025-08-19T15:40:54.396+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
-2025-08-19T15:40:54.396+05:30  INFO 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765: registering service...
-2025-08-19T15:40:54.398+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/APIGATEWAY
-2025-08-19T15:40:54.398+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2025-08-19T15:40:54.398+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = ABHYAM:apigateway:8765, appName = APIGATEWAY, hostName = 172.20.10.8, status = DOWN, ipAddr = 172.20.10.8, port = 8765, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@1163cff1] as "application/json"
-2025-08-19T15:40:54.403+05:30  INFO 8388 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2025-08-19T15:40:54.406+05:30 DEBUG 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
-2025-08-19T15:40:54.406+05:30  INFO 8388 --- [apigateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - registration status: 204
-2025-08-19T15:40:54.406+05:30  INFO 8388 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2025-08-19T15:40:54.408+05:30 DEBUG 8388 --- [apigateway] [SpringApplicationShutdownHook] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8761/eureka/apps/APIGATEWAY/ABHYAM:apigateway:8765
-2025-08-19T15:40:54.408+05:30 DEBUG 8388 --- [apigateway] [SpringApplicationShutdownHook] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2025-08-19T15:40:54.412+05:30 DEBUG 8388 --- [apigateway] [SpringApplicationShutdownHook] o.s.web.client.RestTemplate              : Response 200 OK
-2025-08-19T15:40:54.416+05:30  INFO 8388 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/ABHYAM:apigateway:8765 - deregister  status: 200
-2025-08-19T15:40:54.416+05:30  INFO 8388 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-09-02T12:08:12.630+05:30  INFO 5920 --- [apigateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
