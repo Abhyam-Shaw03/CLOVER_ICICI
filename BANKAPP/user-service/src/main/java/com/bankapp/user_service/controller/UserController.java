@@ -18,11 +18,11 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PreAuthorize("hasAnyRole('ADMIN', 'EMPLOYEE', 'CUSTOMER')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'EMPLOYEE')")
     @PostMapping("/register")
-    public ResponseEntity<String> createUser(@Valid @RequestBody UserRegisterDTO dto) {
+    public void createUser(@Valid @RequestBody UserRegisterDTO dto) {
         userService.createUser(dto);
-        return ResponseEntity.ok("User created successfully");
+//        return ResponseEntity.ok("User created successfully");
     }
 
 
@@ -47,20 +47,17 @@ public class UserController {
 
     @PreAuthorize("#userId == authentication.name")
     @PutMapping("/updatePassword/{userId}")
-    public ResponseEntity<String> updateUserPassword(@PathVariable String userId, @Valid @RequestBody NewPasswordDTO newPasswordDTO) {
+    public void updateUserPassword(@PathVariable String userId, @Valid @RequestBody NewPasswordDTO newPasswordDTO) {
         userService.updateUserPassword(userId, newPasswordDTO.getNewPassword());
-        return ResponseEntity.ok("Password updated successfully");
+//        return ResponseEntity.ok("Password updated successfully");
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'EMPLOYEE')")
     @DeleteMapping("/deleteUser/{userId}")
-    public ResponseEntity<String> deleteUser(@PathVariable String userId){
+    public void deleteUser(@PathVariable String userId){
         try {
             userService.deleteUser(userId);
-            return ResponseEntity.ok("User deleted successfully.");
         } catch (RuntimeException e) {
-            // You can add more specific exception handling here
-            return ResponseEntity.notFound().build();
         }
     }
 
