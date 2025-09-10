@@ -1,0 +1,9 @@
+customer-service: 8081
+employee-service: 8082
+user-service: 8083
+admin-service: 8084
+account-service: 8085
+
+
+service-registry: 8761
+apigateway: 8765

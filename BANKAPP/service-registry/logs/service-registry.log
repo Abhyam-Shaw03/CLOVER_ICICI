@@ -1,0 +1,96 @@
+2025-09-02T11:54:46.019+05:30  INFO 10972 --- [service-registry] [main] c.b.s.ServiceRegistryApplicationTests    : Starting ServiceRegistryApplicationTests using Java 21.0.3 with PID 10972 (started by abhya in D:\CLOVER_ICICI\BANKAPP\service-registry)
+2025-09-02T11:54:46.025+05:30  INFO 10972 --- [service-registry] [main] c.b.s.ServiceRegistryApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-09-02T11:54:47.224+05:30  INFO 10972 --- [service-registry] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=54636cab-067e-3a6d-8cc2-9f5c672f85d9
+2025-09-02T11:54:47.991+05:30  INFO 10972 --- [service-registry] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-02T11:54:49.215+05:30  WARN 10972 --- [service-registry] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-02T11:54:49.521+05:30  INFO 10972 --- [service-registry] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-09-02T11:54:49.564+05:30  INFO 10972 --- [service-registry] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-09-02T11:54:49.565+05:30  INFO 10972 --- [service-registry] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-09-02T11:54:49.567+05:30  INFO 10972 --- [service-registry] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756794289566 with initial instances count: 0
+2025-09-02T11:54:49.620+05:30  INFO 10972 --- [service-registry] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-09-02T11:54:49.623+05:30  WARN 10972 --- [service-registry] [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-09-02T11:54:49.632+05:30  INFO 10972 --- [service-registry] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-09-02T11:54:49.634+05:30  INFO 10972 --- [service-registry] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-09-02T11:54:49.758+05:30  INFO 10972 --- [service-registry] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-02T11:54:49.848+05:30  INFO 10972 --- [service-registry] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTRY with eureka with status UP
+2025-09-02T11:54:49.873+05:30  INFO 10972 --- [service-registry] [main] c.b.s.ServiceRegistryApplicationTests    : Started ServiceRegistryApplicationTests in 4.244 seconds (process running for 5.438)
+2025-09-02T11:54:49.875+05:30  INFO 10972 --- [service-registry] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-09-02T11:54:49.876+05:30  INFO 10972 --- [service-registry] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-09-02T11:54:49.876+05:30  INFO 10972 --- [service-registry] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-09-02T11:54:49.876+05:30  INFO 10972 --- [service-registry] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-09-02T11:54:49.877+05:30  INFO 10972 --- [service-registry] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-09-02T11:54:49.879+05:30  INFO 10972 --- [service-registry] [Thread-11] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-09-02T11:54:49.975+05:30  INFO 10972 --- [service-registry] [main] c.b.s.ServiceRegistryApplication         : Application is fully up and running!
+2025-09-02T11:54:50.723+05:30  INFO 10972 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-REGISTRY with eureka with status DOWN
+2025-09-02T11:54:50.725+05:30  INFO 10972 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2025-09-02T11:54:50.725+05:30  INFO 10972 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-09-02T11:54:50.725+05:30  INFO 10972 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-09-02T11:54:50.725+05:30  INFO 10972 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2025-09-02T11:54:50.726+05:30  INFO 10972 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-09-02T11:54:50.726+05:30  INFO 10972 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-09-02T11:54:50.735+05:30  INFO 10972 --- [service-registry] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-09-02T11:54:50.735+05:30  INFO 10972 --- [service-registry] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-09-02T11:55:00.831+05:30  INFO 10304 --- [service-registry] [main] c.b.s.ServiceRegistryApplicationTests    : Starting ServiceRegistryApplicationTests using Java 21.0.3 with PID 10304 (started by abhya in D:\CLOVER_ICICI\BANKAPP\service-registry)
+2025-09-02T11:55:00.832+05:30  INFO 10304 --- [service-registry] [main] c.b.s.ServiceRegistryApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-09-02T11:55:02.026+05:30  INFO 10304 --- [service-registry] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=54636cab-067e-3a6d-8cc2-9f5c672f85d9
+2025-09-02T11:55:02.658+05:30  INFO 10304 --- [service-registry] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-02T11:55:03.819+05:30  WARN 10304 --- [service-registry] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-02T11:55:04.086+05:30  INFO 10304 --- [service-registry] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-09-02T11:55:04.104+05:30  INFO 10304 --- [service-registry] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-09-02T11:55:04.106+05:30  INFO 10304 --- [service-registry] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-09-02T11:55:04.108+05:30  INFO 10304 --- [service-registry] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756794304107 with initial instances count: 0
+2025-09-02T11:55:04.149+05:30  INFO 10304 --- [service-registry] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-09-02T11:55:04.152+05:30  WARN 10304 --- [service-registry] [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-09-02T11:55:04.164+05:30  INFO 10304 --- [service-registry] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-09-02T11:55:04.164+05:30  INFO 10304 --- [service-registry] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-09-02T11:55:04.300+05:30  INFO 10304 --- [service-registry] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-02T11:55:04.395+05:30  INFO 10304 --- [service-registry] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTRY with eureka with status UP
+2025-09-02T11:55:04.417+05:30  INFO 10304 --- [service-registry] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-09-02T11:55:04.418+05:30  INFO 10304 --- [service-registry] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-09-02T11:55:04.418+05:30  INFO 10304 --- [service-registry] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-09-02T11:55:04.419+05:30  INFO 10304 --- [service-registry] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-09-02T11:55:04.419+05:30  INFO 10304 --- [service-registry] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-09-02T11:55:04.421+05:30  INFO 10304 --- [service-registry] [main] c.b.s.ServiceRegistryApplicationTests    : Started ServiceRegistryApplicationTests in 3.96 seconds (process running for 5.134)
+2025-09-02T11:55:04.425+05:30  INFO 10304 --- [service-registry] [Thread-11] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-09-02T11:55:04.522+05:30  INFO 10304 --- [service-registry] [main] c.b.s.ServiceRegistryApplication         : Application is fully up and running!
+2025-09-02T11:55:05.261+05:30  INFO 10304 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-REGISTRY with eureka with status DOWN
+2025-09-02T11:55:05.263+05:30  INFO 10304 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2025-09-02T11:55:05.263+05:30  INFO 10304 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-09-02T11:55:05.264+05:30  INFO 10304 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-09-02T11:55:05.264+05:30  INFO 10304 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2025-09-02T11:55:05.264+05:30  INFO 10304 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-09-02T11:55:05.265+05:30  INFO 10304 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-09-02T11:55:05.269+05:30  INFO 10304 --- [service-registry] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-09-02T11:55:05.269+05:30  INFO 10304 --- [service-registry] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-09-02T12:03:08.005+05:30  INFO 15512 --- [service-registry] [main] c.b.s.ServiceRegistryApplicationTests    : Starting ServiceRegistryApplicationTests using Java 21.0.3 with PID 15512 (started by abhya in D:\CLOVER_ICICI\BANKAPP\service-registry)
+2025-09-02T12:03:08.007+05:30  INFO 15512 --- [service-registry] [main] c.b.s.ServiceRegistryApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-09-02T12:03:09.180+05:30  INFO 15512 --- [service-registry] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=54636cab-067e-3a6d-8cc2-9f5c672f85d9
+2025-09-02T12:03:09.754+05:30  INFO 15512 --- [service-registry] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-02T12:03:10.923+05:30  WARN 15512 --- [service-registry] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-02T12:03:11.262+05:30  INFO 15512 --- [service-registry] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-09-02T12:03:11.282+05:30  INFO 15512 --- [service-registry] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-09-02T12:03:11.284+05:30  INFO 15512 --- [service-registry] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-09-02T12:03:11.287+05:30  INFO 15512 --- [service-registry] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756794791285 with initial instances count: 0
+2025-09-02T12:03:11.336+05:30  INFO 15512 --- [service-registry] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-09-02T12:03:11.338+05:30  WARN 15512 --- [service-registry] [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2025-09-02T12:03:11.348+05:30  INFO 15512 --- [service-registry] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-09-02T12:03:11.348+05:30  INFO 15512 --- [service-registry] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-09-02T12:03:11.465+05:30  INFO 15512 --- [service-registry] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-02T12:03:11.583+05:30  INFO 15512 --- [service-registry] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTRY with eureka with status UP
+2025-09-02T12:03:11.605+05:30  INFO 15512 --- [service-registry] [main] c.b.s.ServiceRegistryApplicationTests    : Started ServiceRegistryApplicationTests in 3.98 seconds (process running for 5.201)
+2025-09-02T12:03:11.610+05:30  INFO 15512 --- [service-registry] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-09-02T12:03:11.611+05:30  INFO 15512 --- [service-registry] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-09-02T12:03:11.611+05:30  INFO 15512 --- [service-registry] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-09-02T12:03:11.611+05:30  INFO 15512 --- [service-registry] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-09-02T12:03:11.612+05:30  INFO 15512 --- [service-registry] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-09-02T12:03:11.617+05:30  INFO 15512 --- [service-registry] [Thread-11] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-09-02T12:03:11.716+05:30  INFO 15512 --- [service-registry] [main] c.b.s.ServiceRegistryApplication         : Application is fully up and running!
+2025-09-02T12:03:12.490+05:30  INFO 15512 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-REGISTRY with eureka with status DOWN
+2025-09-02T12:03:12.492+05:30  INFO 15512 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2025-09-02T12:03:12.494+05:30  INFO 15512 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-09-02T12:03:12.494+05:30  INFO 15512 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-09-02T12:03:12.494+05:30  INFO 15512 --- [service-registry] [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2025-09-02T12:03:12.495+05:30  INFO 15512 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2025-09-02T12:03:12.495+05:30  INFO 15512 --- [service-registry] [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2025-09-02T12:03:12.502+05:30  INFO 15512 --- [service-registry] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-09-02T12:03:12.502+05:30  INFO 15512 --- [service-registry] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
