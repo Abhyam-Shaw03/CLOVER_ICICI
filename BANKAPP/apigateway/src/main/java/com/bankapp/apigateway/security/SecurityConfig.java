@@ -61,6 +61,13 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.PUT, "/admin/updateProfile/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/admin/delete/**").hasRole("ADMIN")
 
+                        // Fine-grained authorization for account-service details
+                        .requestMatchers(HttpMethod.GET, "/accounts/accountIdDetails/**").hasAnyRole("ADMIN", "EMPLOYEE")
+                        .requestMatchers(HttpMethod.GET, "/accounts/number/**").hasAnyRole("ADMIN", "EMPLOYEE", "CUSTOMER")
+                        .requestMatchers(HttpMethod.GET, "/accounts/customer/**").hasAnyRole("ADMIN", "EMPLOYEE", "CUSTOMER")
+                        .requestMatchers(HttpMethod.POST, "/accounts/create").hasAnyRole("ADMIN", "EMPLOYEE")
+
+
                         // All other requests require a valid token
                         .anyRequest().authenticated()
                 )
