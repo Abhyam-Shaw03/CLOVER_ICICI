@@ -1,6 +1,7 @@
 package com.bankapp.customer_service.service;
 
 import com.bankapp.customer_service.dto.*;
+import com.bankapp.customer_service.feign.AccountServiceClient;
 import com.bankapp.customer_service.feign.UserServiceClient;
 import com.bankapp.customer_service.mapper.CustomerMapper;
 import com.bankapp.customer_service.model.Customer;
@@ -29,6 +30,9 @@ public class CustomerService {
     @Autowired
     private UserServiceClient userServiceClient;
 
+    @Autowired
+    private AccountServiceClient accountServiceClient;
+
     // CREATE CUSTOMER
     public CustomerResponseDTO createCustomer(CustomerCreateDTO createDTO) {
         Customer customer = customerMapper.toEntity(createDTO);
@@ -52,6 +56,14 @@ public class CustomerService {
         userDto.setRole("CUSTOMER");
 
         userServiceClient.createUser(userDto); // sends data to user-service
+
+        // 🔹 Create a default account for this customer (example: Savings Account)
+        AccountCreateDTO accountDto = new AccountCreateDTO();
+        accountDto.setCustomerId(customerId);
+        accountDto.setAccountType(saved.getAccountType());
+        accountDto.setStatus("ACTIVE");
+
+        accountServiceClient.createAccount(accountDto);
 
         return customerMapper.toResponseDTO(saved);
     }
